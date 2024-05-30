@@ -7,7 +7,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AButton: typeof import('ant-design-vue/es')['Button']
     ElButton: typeof import('element-plus/es')['ElButton']
     FullPlayer: typeof import('./src/components/FullPlayer.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
