@@ -73,8 +73,6 @@ export default {
 
 /* 保持原有样式不变 */
 .mini-player {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: #65ef7c;

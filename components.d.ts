@@ -8,10 +8,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
+    Artists: typeof import('./src/components/Artists.vue')['default']
+    Charts: typeof import('./src/components/Charts.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     FullPlayer: typeof import('./src/components/FullPlayer.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
     MiniPlayer: typeof import('./src/components/MiniPlayer.vue')['default']
+    Profile: typeof import('./src/components/Profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

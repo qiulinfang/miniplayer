@@ -185,6 +185,7 @@ export default {
   bottom: 0;
   left: 0;
   background-color: #45c5e4;
+  z-index: 999; /* 设置较高的 z-index 以确保全屏播放器覆盖其他内容 */
 }
 
 .cd-player {
