@@ -3,7 +3,6 @@
   <div class="flex-container">
     <header>页头</header>
     <main class="content">
-
       <router-view></router-view>
     </main>
 
@@ -18,6 +17,7 @@
 
 <script>
 export default {
+
 };
 </script>
 
