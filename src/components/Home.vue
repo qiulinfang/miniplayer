@@ -1,22 +1,37 @@
 <template>
   <div class="flex-segment">段落1
+    <div>
+      <p>User Name: {{ user.name }}</p>
+      <p>User Age: {{ user.age }}</p>
+      <p>User Email: {{ user.email }}</p>
+    </div>
+  </div>
+  <div class="flex-segment">段落2
     <button type="button" class="btn btn-primary" @click="showMainPlayer">播放器</button>
   </div>
-  <div class="flex-segment">段落2</div>
   <router-view></router-view>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+import axios from 'axios';
 
-export default {
-  name: "Home",
+const router = useRouter();
+const user = ref({});
 
-  methods: {
-    showMainPlayer() {
-      this.$router.push('/FullPlayer');
-    },
+onMounted(async () => {
+  try {
+    const response = await axios.get('/api/user');
+    user.value = response.data.data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
   }
-}
+});
+
+const showMainPlayer = function () {
+  router.push('/FullPlayer');
+};
 </script>
 
 <style>
