@@ -5,6 +5,9 @@
     </button>
     <button @click.stop="playPrevious">上一首</button>
     <button @click.stop="playNext">下一首</button>
+    <!-- 环形进度条 -->
+    <el-progress type="circle" :percentage="0" width="45"/>
+
   </div>
 </template>
 
@@ -79,5 +82,10 @@ export default {
   text-align: center;
   padding: 10px;
   border: 1px solid #ccc;
+}
+
+/* 环形进度条 */
+.el-progress--circle {
+  margin-right: 15px;
 }
 </style>

@@ -7,28 +7,54 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    '(Card': typeof import('./src/components/(Card.vue')['default']
     Artists: typeof import('./src/components/Artists.vue')['default']
+    ArtistsDetail: typeof import('./src/components/ArtistsDetail.vue')['default']
+    Card: typeof import('./src/components/Card.vue')['default']
     Charts: typeof import('./src/components/Charts.vue')['default']
+<<<<<<< HEAD
+=======
+    ChartsDetail: typeof import('./src/components/ChartsDetail.vue')['default']
+    copy: typeof import('./src/components/ArtistsDetail copy.vue')['default']
+>>>>>>> mainPage
     ElBu: typeof import('element-plus/es')['ElBu']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCarousel: typeof import('element-plus/es')['ElCarousel']
     ElCarouselItem: typeof import('element-plus/es')['ElCarouselItem']
+<<<<<<< HEAD
     ElIcon: typeof import('element-plus/es')['ElIcon']
+=======
+    ElCol: typeof import('element-plus/es')['ElCol']
+    ElDrawer: typeof import('element-plus/es')['ElDrawer']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElImage: typeof import('element-plus/es')['ElImage']
+>>>>>>> mainPage
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElProgress: typeof import('element-plus/es')['ElProgress']
+<<<<<<< HEAD
+=======
+    ElRadioButton: typeof import('element-plus/es')['ElRadioButton']
+    ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
+    ElRow: typeof import('element-plus/es')['ElRow']
+>>>>>>> mainPage
     ElSelect: typeof import('element-plus/es')['ElSelect']
     ElSlider: typeof import('element-plus/es')['ElSlider']
     ElSpace: typeof import('element-plus/es')['ElSpace']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
+<<<<<<< HEAD
+=======
+    Footer: typeof import('./src/components/Footer.vue')['default']
+>>>>>>> mainPage
     FullPlayer: typeof import('./src/components/FullPlayer.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
     MiniPlayer: typeof import('./src/components/MiniPlayer.vue')['default']
     Profile: typeof import('./src/components/Profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SplitCard: typeof import('./src/components/SplitCard.vue')['default']
   }
 }
